@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    animation: 1s linear;
+}
+span {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/valentine-and-love-filled/64/Love_Valentine-05-256.png");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: animateHearts 10s linear;
+}
+
+@keyframes animateHearts {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        background-color: hue;
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
